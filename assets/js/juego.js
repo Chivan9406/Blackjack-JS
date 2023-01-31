@@ -7,7 +7,7 @@
     let puntosJugador = 0;
     let puntosComputadora = 0;
 
-// Referencias HTML
+    // Referencias HTML
     const btnPedir = document.querySelector('#btnPedir');
     const btnDetener = document.querySelector('#btnDetener');
     const btnNuevo = document.querySelector('#btnNuevo');
@@ -15,7 +15,7 @@
     const divCartasJugador = document.querySelector('#jugador-cartas');
     const divCartasComputadora = document.querySelector('#computadora-cartas');
 
-// Crea las cartas, las asigna al deck y luego lo revuelve
+    // Crea las cartas, las asigna al deck y luego lo revuelve
     const crearDeck = () => {
         for (let i = 2; i <= 10; i++) {
             for (let j = 0; j <= 3; j++) {
@@ -35,7 +35,7 @@
 
     crearDeck();
 
-// Toma una carta
+    // Toma una carta
     const pedirCarta = () => {
         if (deck.length === 0) {
             throw 'No hay cartas en el deck';
@@ -54,7 +54,7 @@
             : valor * 1);
     }
 
-// Turno computadora
+    // Turno computadora
     const turnoComputadora = (puntosMinimos) => {
         do {
             const carta = pedirCarta();
@@ -85,7 +85,7 @@
         }, 100);
     };
 
-// Eventos
+    // Eventos
     btnPedir.addEventListener('click', () => {
         const carta = pedirCarta();
         puntosJugador = puntosJugador + valorCarta(carta);
