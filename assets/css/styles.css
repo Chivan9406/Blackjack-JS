@@ -4,6 +4,10 @@ body {
     background-color: #2f4f30;
 }
 
+h1 {
+    color: white;
+}
+
 .titulo {
     text-align: center;
     background-color: black;
