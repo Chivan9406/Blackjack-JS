@@ -6,7 +6,7 @@ const miModulo = (() => {
   const especiales = ['A', 'J', 'Q', 'K'];
   let puntosJugadores = [];
 
-// Referencias HTML
+  // Referencias HTML
   const btnPedir = document.querySelector('#btnPedir');
   const btnDetener = document.querySelector('#btnDetener');
   const btnNuevo = document.querySelector('#btnNuevo');
@@ -48,7 +48,7 @@ const miModulo = (() => {
     return _.shuffle(deck);
   };
 
-// Esta función me permite tomar una carta del deck
+  // Esta función me permite tomar una carta del deck
   const pedirCarta = () => {
     if (deck.length === 0) {
       throw 'No hay cartas en el deck';
